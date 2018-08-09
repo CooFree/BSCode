@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UIImageView *img = [[UIImageView alloc]init];
+    img.contentMode = UIViewContentModeScaleAspectFit;
+    [img sd_setImageWithURL:[NSURL URLWithString:@"http://h.hiphotos.baidu.com/image/h%3D300/sign=ae97d8e36f2762d09f3ea2bf90ed0849/5243fbf2b2119313b705987069380cd790238daf.jpg"] placeholderImage:nil];
+    [self.view addSubview:img];
+    [img mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.width.height.equalTo(self.view);
+    }];
 }
 
 

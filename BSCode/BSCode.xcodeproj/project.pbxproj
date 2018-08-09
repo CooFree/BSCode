@@ -42,6 +42,7 @@
 		B7CA496219F1AB153DCBFB06 /* Pods-BSCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BSCode.release.xcconfig"; path = "Pods/Target Support Files/Pods-BSCode/Pods-BSCode.release.xcconfig"; sourceTree = "<group>"; };
 		CE6B2C132119437600CAEA5D /* NetWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
 		CE6B2C142119437600CAEA5D /* NetWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
+		CE6B2C1A2119880F00CAEA5D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CE7D6ABF2118212A00DBE730 /* BSCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7D6AC22118212A00DBE730 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE7D6AC32118212A00DBE730 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -142,6 +143,7 @@
 				CE7D6AD32118212C00DBE730 /* Info.plist */,
 				CE7D6AD42118212C00DBE730 /* main.m */,
 				CE7D6ACB2118212A00DBE730 /* BSCode.xcdatamodeld */,
+				CE6B2C1A2119880F00CAEA5D /* PrefixHeader.pch */,
 			);
 			path = BSCode;
 			sourceTree = "<group>";
@@ -491,6 +493,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = BSCode/PrefixHeader.pch;
 				INFOPLIST_FILE = BSCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -499,6 +502,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tigerWork.BSCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -508,6 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = BSCode/PrefixHeader.pch;
 				INFOPLIST_FILE = BSCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -516,6 +521,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tigerWork.BSCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
